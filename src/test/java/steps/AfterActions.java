@@ -20,7 +20,7 @@ public class AfterActions {
     	System.out.println(scenario.isFailed());
     	 if (scenario.isFailed()) {
              byte[] screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-             scenario.embed(screenshotBytes, "image/jpg");
+             scenario.embed(screenshotBytes, "image/png");
 
          }
         SeleniumDriver.tearDown();
