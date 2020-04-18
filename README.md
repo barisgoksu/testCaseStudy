@@ -1,0 +1,2 @@
+# testCaseStudy
+mvn verify test
