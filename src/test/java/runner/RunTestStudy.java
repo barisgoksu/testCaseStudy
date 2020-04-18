@@ -10,10 +10,12 @@ import org.junit.runner.RunWith;
 
 @CucumberOptions(
         monochrome = true,
+
         features =
                 {"src/test/resources/FeatureFiles/"},
 
-        plugin= {"pretty","html:target/cucumber-htmlreport","json:target/cucumber/cucumber.json"},
+        plugin= {"pretty","html:target/cucumber-reports","json:target/cucumber/cucumber.json",
+                "com.cucumber.listener.ExtentCucumberFormatter:target/html/ExtentReport.html"},
 
 
 
