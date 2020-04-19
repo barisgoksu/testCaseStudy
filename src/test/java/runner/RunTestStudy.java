@@ -12,14 +12,13 @@ import org.junit.runner.RunWith;
         monochrome = true,
 
         features =
-                {"src/test/resources/FeatureFiles/"},
+                {"src/test/resources/feature/"},
 
         plugin= {"pretty","html:target/cucumber-reports","json:target/cucumber/cucumber.json",
                 "com.cucumber.listener.ExtentCucumberFormatter:target/html/ExtentReport.html"},
 
 
-
-        glue = {"steps/"}
+        glue = {"steps/", "hooks/"}
 
 )
 

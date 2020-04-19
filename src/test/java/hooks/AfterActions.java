@@ -1,8 +1,6 @@
-package steps;
+package hooks;
 
 
-import com.cucumber.listener.Reporter;
-import com.github.mkolisnyk.cucumber.reporting.CucumberResultsOverview;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import org.openqa.selenium.OutputType;
